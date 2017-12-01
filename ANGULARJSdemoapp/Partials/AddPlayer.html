@@ -1,0 +1,62 @@
+﻿<div style="margin-left:78px;width:200px;">
+
+<h2> ADD  NEW PLAYER</h2>
+<form name="AddplayerForm" ng-submit="AddPlayer();" class="form-group-lg">
+    <!--<table>
+        <tr>
+            <td> Name</td>
+            <td> <input type="text" ng-model="player.Name" required /></td>
+        </tr>
+        <tr>
+            <td> Club</td>
+            <td> <input type="text" ng-model="player.Club" required /></td>
+        </tr>
+        <tr>
+            <td> Nationality</td>
+            <td> <input type="text" ng-model="player.Nationality" required/></td>
+        </tr>
+        <tr>
+            <td> Age</td>
+            <td> <input type="text" ng-model="player.Age"  required/></td>
+        </tr>
+            <tr>
+            <td colspan="3"><input type="submit" value="Submit"  ng-disabled="AddplayerForm.$invalid"/></td>
+        </tr>
+   
+    </table>-->
+
+    
+    <div class="form-group">
+        <label for="player.Name"> Name</label>
+        <input type="text" class="form-control" ng-model="player.Name" required/>
+
+    </div>
+
+    <div class="form-group">
+        <label for="player.Club"> Club</label>
+        <input type="text" class="form-control" ng-model="player.Club" required />
+
+    </div>
+
+    <div class="form-group">
+        <label for="player.Name"> Nationality</label>
+        <input type="text" class="form-control" ng-model="player.Nationality" required />
+
+    </div>
+
+    <div class="form-group">
+        <label for="player.Age"> Age</label>
+        <input type="text" class="form-control" ng-model="player.Age" required />
+
+    </div>
+
+    <div class="form-group">
+      
+        <input type="submit" class="btn btn-success" value="Submit" ng-disabled="AddplayerForm.$invalid" />
+
+    </div>
+</form>
+<br/>
+<br/>
+<a href="#" class="btn btn-primary"> back to main</a>
+</div>
